@@ -1,0 +1,14 @@
+.importButton{
+    display: inline;
+    cursor: pointer;
+    margin-left:1%;
+    border-color:black;
+    border: 2px solid black;
+    padding: 1px 5px;
+    background-color: rgb(235, 235, 235);
+
+}
+.fileInput{
+    display: none;
+    width: 300%;
+}

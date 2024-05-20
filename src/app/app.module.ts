@@ -25,6 +25,7 @@ import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { OrderInfoComponent } from './order-info/order-info.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     BoxComponent,
     ConfigurationComponent,
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
+    OrderInfoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,60 @@
-<p>configuration works!</p>
+<!DOCTYPE html>
+<div class="container bg-white mt-4">
+    <h5>Machinery area electrification cabling material</h5>
+    <h6>Material</h6>
+    <div class="container">
+        <table class="table table-bordered table-striped">
+           <thead>
+                <tr>
+                    <th scope="col" class="align-top fw-normal">Cable</th>
+                    <th scope="col" class="align-top fw-normal">Cable Material 1</th>
+                    <th scope="col" class="align-top fw-normal">Cable Material 2</th>
+                    <th scope="col" class="align-top fw-normal">Elevator A</th>
+                    <th scope="col" class="align-top fw-normal">Elevator B</th>
+                    <th scope="col" class="align-top fw-normal">Elevator C</th>    
+                </tr>
+           </thead>
+           <tbody>
+                <tr *ngFor="let material of cabling.machinaryAreaCabiling">     
+                    <th scope="row" class="fw-normal">{{material.materialFor}}</th>
+                    <td *ngFor="let materialitem of material.materialItem" >
+                        <input class="form-control" style="text-transform:uppercase" [(ngModel)]="materialitem.value">
+                    </td>   
+                    <td *ngFor="let elevator of material.elevatorIdentifier">
+                        <select class="form-control" >
+                            <option value="">-</option>
+                            <option value="1">1</option>
+                            <option  value="2">2</option>
+                        </select>
+                    </td>
+                    <td *ngFor="let elevator of material.elevatorIdentifier">
+                        <select class="form-control">
+                            <option value="">-</option>
+                            <option value="1">1</option>
+                            <option  value="2">2</option>
+                        </select>
+                    </td>
+                    <td *ngFor="let elevator of material.elevatorIdentifier">
+                        <select class="form-control">
+                            <option value="">-</option>
+                            <option value="1">1</option>
+                            <option  value="2">2</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button (click)="save()">Save</button>
+        <button class="ms-2" (click)="export()">Export</button>
+       <label  class="importButton">Import
+        <input type="file" class="fileInput" (change)="fileImport($event)">
+       </label>
+    </div>
+</div>
+<div>
+    <button (click)="simply()">what</button>
+</div>
+<div>
+    <button (click)="getMaterial()">get</button>
+</div>
+<button (click)="down()" class=" w-auto text-center">Download</button>
