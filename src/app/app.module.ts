@@ -22,12 +22,18 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatRadioModule } from '@angular/material/radio';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { ConfigurationComponent } from './configuration/configuration.component';
+import { HeaderComponent } from './header/header.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoxComponent
+    BoxComponent,
+    ConfigurationComponent,
+    HeaderComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
