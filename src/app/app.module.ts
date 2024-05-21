@@ -26,6 +26,9 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { OrderInfoComponent } from './order-info/order-info.component';
+import { TableComponent } from './table/table.component';
+import { UpdateComponent } from './update/update.component';
+import { DeleteComponent } from './delete/delete.component';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { OrderInfoComponent } from './order-info/order-info.component';
     ConfigurationComponent,
     HeaderComponent,
     SidenavComponent,
-    OrderInfoComponent
+    OrderInfoComponent,
+    TableComponent,
+    UpdateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
